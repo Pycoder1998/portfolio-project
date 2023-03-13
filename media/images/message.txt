@@ -1,0 +1,56 @@
+../systemd-stable-253.1/meson.build:1604:8: ERROR: Problem encountered: default-compression=xz requires xz
+
+A full log can be found at /var/tmp/portage/sys-apps/systemd-253.1/work/systemd-stable-253.1-abi_x86_32.x86/meson-logs/meson-log.txt
+ * ERROR: sys-apps/systemd-253.1::gentoo failed (configure phase):
+ *   (no error message)
+ * 
+ * Call stack:
+ *     ebuild.sh, line  136:  Called src_configure
+ *   environment, line 4544:  Called multilib-minimal_src_configure
+ *   environment, line 3221:  Called multilib_foreach_abi 'multilib-minimal_abi_src_configure'
+ *   environment, line 3471:  Called multibuild_foreach_variant '_multilib_multibuild_wrapper' 'multilib-minimal_abi_src_configure'
+ *   environment, line 3176:  Called _multibuild_run '_multilib_multibuild_wrapper' 'multilib-minimal_abi_src_configure'
+ *   environment, line 3174:  Called _multilib_multibuild_wrapper 'multilib-minimal_abi_src_configure'
+ *   environment, line  850:  Called multilib-minimal_abi_src_configure
+ *   environment, line 3215:  Called multilib_src_configure
+ *   environment, line 3696:  Called meson_src_configure '--localstatedir=/var' '-Dsupport-url=https://gentoo.org/support/' '-Dpamlibdir=/lib/security' '-Dbashcompletiondir=/usr/share/bash-completion/completions' '-Dsplit-usr=true' '-Dsplit-bin=true' '-Drootprefix=/' '-Drootlibdir=/usr/lib' '-Dsysvinit-path=' '-Dsysvrcnd-path=' '-Dtelinit-path=/lib/sysvinit/telinit' '-Dima=true' '-Ddefault-hierarchy=unified' '-Dacl=false' '-Dapparmor=false' '-Daudit=false' '-Dlibcryptsetup=false' '-Dlibcurl=false' '-Ddns-over-tls=false' '-Delfutils=false' '-Dlibfido2=false' '-Dgcrypt=true' '-Dgnu-efi=false' '-Dgnutls=false' '-Defi-includedir=/usr/include/efi' '-Defi-libdir=/usr/lib' '-Dhomed=false' '-Dmicrohttpd=false' '-Didn=false' '-Dimportd=false' '-Dbzip2=false' '-Dzlib=false' '-Dkmod=false' '-Dlz4=true' '-Dxz=false' '-Dzstd=true' '-Dlibiptc=false' '-Dopenssl=false' '-Dpam=true' '-Dp11kit=false' '-Dpcre2=false' '-Dpolkit=false' '-Dpwquality=false' '-Dqrencode=false' '-Dseccomp=false' '-Dselinux=false' '-Dtpm2=false' '-Ddbus=false' '-Dxkbcommon=false' '-Dntp-servers=0.gentoo.pool.ntp.org 1.gentoo.pool.ntp.org 2.gentoo.pool.ntp.org 3.gentoo.pool.ntp.org' '-Ddefault-kill-user-processes=false' '-Dcreate-log-dirs=false' '-Dbacklight=false' '-Dbinfmt=false' '-Dcoredump=false' '-Denvironment-d=false' '-Dfirstboot=false' '-Dhibernate=false' '-Dhostnamed=false' '-Dldconfig=false' '-Dlocaled=false' '-Dman=false' '-Dnetworkd=false' '-Dquotacheck=false' '-Drandomseed=false' '-Drfkill=false' '-Dsysusers=false' '-Dtimedated=false' '-Dtimesyncd=false' '-Dtmpfiles=false' '-Dvconsole=false'
+ *   environment, line 3077:  Called die
+ * The specific snippet of code:
+ *       "${mesonargs[@]}" ) || die
+ * 
+ * If you need support, post the output of `emerge --info '=sys-apps/systemd-253.1::gentoo'`,
+ * the complete build log and the output of `emerge -pqv '=sys-apps/systemd-253.1::gentoo'`.
+ * The complete build log is located at '/var/tmp/portage/sys-apps/systemd-253.1/temp/build.log'.
+ * The ebuild environment file is located at '/var/tmp/portage/sys-apps/systemd-253.1/temp/environment'.
+ * Working directory: '/var/tmp/portage/sys-apps/systemd-253.1/work/systemd-stable-253.1-abi_x86_32.x86'
+ * S: '/var/tmp/portage/sys-apps/systemd-253.1/work/systemd-stable-253.1'
+
+>>> Failed to emerge sys-apps/systemd-253.1, Log file:
+
+>>>  '/var/tmp/portage/sys-apps/systemd-253.1/temp/build.log'
+
+ * Messages for package sys-apps/systemd-253.1:
+
+ * ERROR: sys-apps/systemd-253.1::gentoo failed (configure phase):
+ *   (no error message)
+ * 
+ * Call stack:
+ *     ebuild.sh, line  136:  Called src_configure
+ *   environment, line 4544:  Called multilib-minimal_src_configure
+ *   environment, line 3221:  Called multilib_foreach_abi 'multilib-minimal_abi_src_configure'
+ *   environment, line 3471:  Called multibuild_foreach_variant '_multilib_multibuild_wrapper' 'multilib-minimal_abi_src_configure'
+ *   environment, line 3176:  Called _multibuild_run '_multilib_multibuild_wrapper' 'multilib-minimal_abi_src_configure'
+ *   environment, line 3174:  Called _multilib_multibuild_wrapper 'multilib-minimal_abi_src_configure'
+ *   environment, line  850:  Called multilib-minimal_abi_src_configure
+ *   environment, line 3215:  Called multilib_src_configure
+ *   environment, line 3696:  Called meson_src_configure '--localstatedir=/var' '-Dsupport-url=https://gentoo.org/support/' '-Dpamlibdir=/lib/security' '-Dbashcompletiondir=/usr/share/bash-completion/completions' '-Dsplit-usr=true' '-Dsplit-bin=true' '-Drootprefix=/' '-Drootlibdir=/usr/lib' '-Dsysvinit-path=' '-Dsysvrcnd-path=' '-Dtelinit-path=/lib/sysvinit/telinit' '-Dima=true' '-Ddefault-hierarchy=unified' '-Dacl=false' '-Dapparmor=false' '-Daudit=false' '-Dlibcryptsetup=false' '-Dlibcurl=false' '-Ddns-over-tls=false' '-Delfutils=false' '-Dlibfido2=false' '-Dgcrypt=true' '-Dgnu-efi=false' '-Dgnutls=false' '-Defi-includedir=/usr/include/efi' '-Defi-libdir=/usr/lib' '-Dhomed=false' '-Dmicrohttpd=false' '-Didn=false' '-Dimportd=false' '-Dbzip2=false' '-Dzlib=false' '-Dkmod=false' '-Dlz4=true' '-Dxz=false' '-Dzstd=true' '-Dlibiptc=false' '-Dopenssl=false' '-Dpam=true' '-Dp11kit=false' '-Dpcre2=false' '-Dpolkit=false' '-Dpwquality=false' '-Dqrencode=false' '-Dseccomp=false' '-Dselinux=false' '-Dtpm2=false' '-Ddbus=false' '-Dxkbcommon=false' '-Dntp-servers=0.gentoo.pool.ntp.org 1.gentoo.pool.ntp.org 2.gentoo.pool.ntp.org 3.gentoo.pool.ntp.org' '-Ddefault-kill-user-processes=false' '-Dcreate-log-dirs=false' '-Dbacklight=false' '-Dbinfmt=false' '-Dcoredump=false' '-Denvironment-d=false' '-Dfirstboot=false' '-Dhibernate=false' '-Dhostnamed=false' '-Dldconfig=false' '-Dlocaled=false' '-Dman=false' '-Dnetworkd=false' '-Dquotacheck=false' '-Drandomseed=false' '-Drfkill=false' '-Dsysusers=false' '-Dtimedated=false' '-Dtimesyncd=false' '-Dtmpfiles=false' '-Dvconsole=false'
+ *   environment, line 3077:  Called die
+ * The specific snippet of code:
+ *       "${mesonargs[@]}" ) || die
+ * 
+ * If you need support, post the output of `emerge --info '=sys-apps/systemd-253.1::gentoo'`,
+ * the complete build log and the output of `emerge -pqv '=sys-apps/systemd-253.1::gentoo'`.
+ * The complete build log is located at '/var/tmp/portage/sys-apps/systemd-253.1/temp/build.log'.
+ * The ebuild environment file is located at '/var/tmp/portage/sys-apps/systemd-253.1/temp/environment'.
+ * Working directory: '/var/tmp/portage/sys-apps/systemd-253.1/work/systemd-stable-253.1-abi_x86_32.x86'
+ * S: '/var/tmp/portage/sys-apps/systemd-253.1/work/systemd-stable-253.1'
